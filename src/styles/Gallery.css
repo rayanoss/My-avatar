@@ -1,0 +1,56 @@
+ul{
+    margin: 0;
+    list-style: none;
+}
+.gallery-avatar-list {
+    display: flex;
+}
+
+.gallery-avatar-items{
+    position: relative;
+    background: #e5e5e5;
+    height: 500px;
+    width: 500px;
+    margin: 20px;
+}
+
+.item{
+    position: absolute;
+}
+
+.item.glasses {
+    width: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 106px;
+}
+.item.nose {
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 148px;
+}
+.item.mouth {
+    width: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 206px;
+}
+.item.beard {
+    width: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 171px;
+}
+.item.eyes {
+    width: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+}
+.item.hair {
+    width: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

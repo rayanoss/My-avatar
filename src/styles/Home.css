@@ -1,0 +1,188 @@
+h1{
+    text-transform: capitalize;
+    color: #e8e8e8;
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+}
+
+.avatar-generator-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e78a25;
+}
+
+.avatar-container{
+    display: flex;
+    justify-content: center;
+}
+
+.left-side-avatar{
+    position: relative;
+    background: #e5e5e5; 
+    margin-right: 10px;
+    height: 500px;
+    width: 500px;
+}
+.avatar-navigation-menu input{
+    background: #ffab3f;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    min-width: 109px;
+}
+
+.avatar-navigation-menu input:hover{
+    background: #e9a042;
+    transition: all 0.5s ease;
+}
+
+.list-item{
+    display: flex;
+}
+
+.avatar-item{
+    width: 90px;
+    margin: 25px 5px 0px 5px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #e5e5e5;
+    box-shadow:  20px 20px 60px #c3c3c3,
+             -20px -20px 60px #ffffff;
+}
+
+.selected-item{
+    position: absolute;
+}
+
+.selected-item.hair-avatar{
+    width: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.selected-item.nose-avatar{
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 148px;
+}
+
+.selected-item.beard-avatar{
+    width: 36%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 171px;
+}
+
+.selected-item.mouth-avatar{
+    width: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 206px;
+}
+
+.selected-item.eyes-avatar{
+    width: 27%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 110px;
+}
+
+.selected-item.glasses-avatar{
+    width: 31%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 106px;
+}
+
+.avatar-rightside-items{
+    margin-left: 10px;
+    background: #e5e5e5;
+   
+}
+
+.avatar-item.active{
+    border: 1px solid #e9a042;
+}
+
+.btn-avatar-action{
+    margin-top: 50px;
+}
+
+.btn-avatar-action button{
+    background: #ffab3f;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    min-width: 109px;
+    margin: 0px 5px;
+}
+
+.btn-avatar-action button:hover{
+    background: #e9a042;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1175px){
+   .avatar-container{
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .list-item{
+    justify-content: center;
+    flex-wrap: wrap;
+   }
+
+   .left-side-avatar, .avatar-rightside-items{
+       margin: 0;
+   }
+
+   .btn-avatar-action{
+    margin: 50px;
+   }
+}
+
+@media screen and (max-width: 768px){
+
+    .avatar-navigation-menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .avatar-navigation-menu input{
+        width: 50%;
+    }
+
+    .avatar-item{
+        margin: 25px 5px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    .avatar-container{
+        width: 100%;
+    }
+
+    .left-side-avatar{
+        width: 100%;
+    }
+
+    .left-side-avatar img{
+        width: 100%;
+    }
+}
+
+
